@@ -28,9 +28,35 @@ console.log('Hello....'); // Este mensaje se mostrará inmediatamente, sin esper
 // fs.writeFile - ESCRITURA DE ARCHIVOS (también asíncrona)
 // Esta función crea un nuevo archivo o sobrescribe uno existente
 fs.writeFile(path.join(__dirname, 'files', 'reply.txt'), 'Bien y tu.', (err) => {
-    if (err) {
-        console.error('Error al escribir archivo:', err); // Mostramos el error específico
-        throw err; // Si hay un error al escribir el archivo, lo lanzamos
-    }
-    console.log('Archivo escrito correctamente'); // Mensaje de confirmación al escribir el archivo
+  if (err) {
+      console.error('Error al escribir archivo:', err); // Mostramos el error específico
+      throw err; // Si hay un error al escribir el archivo, lo lanzamos
+  }
+  console.log('Archivo escrito correctamente'); // Mensaje de confirmación al escribir el archivo
+
+    // fs.appendFile - AÑADIR CONTENIDO A UN ARCHIVO EXISTENTE (también asíncrona)
+    // Esta función agrega contenido al final de un archivo existente
+    // Si el archivo no existe, lo crea
+    fs.appendFile(path.join(__dirname, 'files', 'reply.txt'), '\n\nGenial!.', (err) => {
+        if (err) {
+            console.error('Error al escribir archivo:', err); // Mostramos el error específico
+            throw err; // Si hay un error al escribir el archivo, lo lanzamos
+        }
+        console.log('Archivo append correctamente'); // Mensaje de confirmación al agregar contenido al archivo
+        
+        // fs.rename - RENOMBRAR ARCHIVOS (también asíncrona)
+        // Esta función cambia el nombre de un archivo existente
+        // Si el archivo no existe, lanza un error
+        // Si el nuevo nombre ya existe, lo sobrescribe
+        fs.rename(path.join(__dirname, 'files', 'reply.txt'), path.join(__dirname, 'files', 'newReply.txt'), (err) => {
+            if (err) {
+                console.error('Error al renombrar archivo:', err); // Mostramos el error específico
+                throw err; // Si hay un error al renombrar el archivo, lo lanzamos
+            }
+            console.log('Archivo renombrado correctamente'); // Mensaje de confirmación al renombrar el archivo
+        });
+    });
 });
+
+
+
