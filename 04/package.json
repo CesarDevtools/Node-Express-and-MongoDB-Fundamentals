@@ -1,0 +1,27 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CesarDevtools/node.git"
+  },
+  "author": "Cesar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CesarDevtools/node/issues"
+  },
+  "homepage": "https://github.com/CesarDevtools/node#readme",
+  "description": "",
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
