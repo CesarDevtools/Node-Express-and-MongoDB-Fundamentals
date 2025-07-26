@@ -1,0 +1,17 @@
+2025-07-26	18:08:46	257713ab-fe10-4ffe-b76d-976fc757fdd9	/new-page.html	GET
+2025-07-26	18:08:46	a6bcad4a-b735-4da6-bbaf-1850cb91defb	/css/style.css	GET
+2025-07-26	18:08:46	4ad1ca29-f0e3-44fb-8c4e-3e8f820bbf80	/img/img1.jpg	GET
+2025-07-26	18:08:46	6f9bd781-dc5f-4db8-985e-1db861ff36ad	/favicon.ico	GET
+2025-07-26	18:09:10	440968a1-3a4f-49a7-83fd-ffcd33847163	/new-page.html	GET
+2025-07-26	18:09:10	7e580d40-9985-4c1c-bdea-6e52ecd1cc49	/css/style.css	GET
+2025-07-26	18:09:10	4584cc6c-be8d-46ba-ab28-01dce2530589	/img/img1.jpg	GET
+2025-07-26	18:09:20	ad6a264e-6728-45f7-86d5-3368ea135772	/new-page.html	GET
+2025-07-26	18:09:20	9a84e5dd-b4b4-482b-8b41-03b7bde9fe50	/css/style.css	GET
+2025-07-26	18:09:20	19ec7063-d842-44eb-a563-b4109677dde9	/img/img1.jpg	GET
+2025-07-26	18:09:22	71a64002-2d8e-42b9-a260-a869f6e88942	/new-page.html	GET
+2025-07-26	18:09:22	944131de-50f1-4ad5-b45c-e85896a025da	/css/style.css	GET
+2025-07-26	18:09:22	58d35482-a2a5-4e60-8f9d-8abc2538b45e	/img/img1.jpg	GET
+2025-07-26	18:10:28	3f3a8307-1a10-408d-81bd-fbb0e43113d8	/new-page.html	GET
+2025-07-26	18:10:55	37b81cdf-8e6f-4eb9-8ef8-e32145c667f8	/new-page.html	GET
+2025-07-26	18:10:55	189a2d15-c0a0-4354-9e09-79924bac3731	/css/style.css	GET
+2025-07-26	18:10:55	415974d2-82d7-40d0-bca3-736b0cdc9dc6	/img/img1.jpg	GET
