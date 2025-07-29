@@ -45,6 +45,28 @@ app.get(/^\/hello(\.html)?$/, (req, res, next) => {
     res.send('Hello World!');
 });
 
+// FUNCIONES DE MIDDLEWARE SEPARADAS PARA CHAIN
+// Estas funciones se ejecutan en secuencia cuando se accede a /chain
+const one = (req, res, next) => {
+    console.log('one');
+    next(); // Pasa al siguiente middleware
+}
+
+const two = (req, res, next) => {
+    console.log('two');
+    next(); // Pasa al siguiente middleware
+}
+
+const three = (req, res) => {
+    console.log('three');
+    res.send('Finished!'); // Termina la cadena enviando respuesta
+}
+
+// RUTA CON ARRAY DE MIDDLEWARES
+// En Express 5 necesitamos regex para patrones como (.html)?
+app.get(/^\/chain(\.html)?$/, [one, two, three]);
+
+
 // CATCH-ALL ROUTE PARA MANEJAR 404 (PÁGINAS NO ENCONTRADAS)
 // Regex /.*/ coincide con cualquier ruta (. = cualquier carácter, * = cero o más veces)
 // Esta ruta debe ir SIEMPRE al final porque coincide con todo
