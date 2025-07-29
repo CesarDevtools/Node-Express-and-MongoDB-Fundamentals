@@ -7,7 +7,6 @@ const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
 // Importar CORS para manejar solicitudes de diferentes orígenes (Cross-Origin Resource Sharing)
 const cors = require('cors');
-const { error } = require('console');
 const PORT = process.env.PORT || 3500;
 
 // MIDDLEWARE PERSONALIZADO PARA LOGGING
